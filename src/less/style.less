@@ -1,0 +1,61 @@
+@import './variables.less';
+
+body {
+  background: @gray-light;
+  color: @gray;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+.default-border {
+  border: 1px solid @gray-medium;
+}
+.btn {
+  .default-border;
+  border-radius: 3px;
+  display: inline;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.btn:focus {
+  outline: none;
+}
+.legacy-app-container {
+  padding: 20px;
+}
+.legacy-button-container {
+  @media (min-width: @breakpoint-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .legacy-text-bar {
+    margin-top: 10px;
+  }
+  .legacy-button-bar {
+    .legacy-show-text-btn {
+      &:hover {
+        background-color: darken(@blue, 20%);
+        border-color: darken(@blue, 40%);
+        cursor: pointer;
+      }
+      @media (min-width: @breakpoint-width) {
+        &:hover {
+          background-color: darken(@green, 10%);
+          border-color: darken(@green, 30%);
+        }
+        background-color: @green;
+        border-color: darken(@green, 10%);
+      }
+      background-color: @blue;
+      border-color: darken(@blue, 20%);
+      color: @white;
+    }
+    text-align: center;
+    width: 100%;
+  }
+  .default-border;
+  background: @white;
+  border-radius: 2px;
+  padding: 10px;
+}

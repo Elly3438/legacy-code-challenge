@@ -1,0 +1,63 @@
+body {
+  background: #EEE;
+  color: #505050;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+.default-border {
+  border: 1px solid #CCC;
+}
+.btn {
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  display: inline;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.btn:focus {
+  outline: none;
+}
+.legacy-app-container {
+  padding: 20px;
+}
+.legacy-button-container {
+  border: 1px solid #CCC;
+  background: #FFF;
+  border-radius: 2px;
+  padding: 10px;
+}
+@media (min-width: 600px) {
+  .legacy-button-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+.legacy-button-container .legacy-text-bar {
+  margin-top: 10px;
+}
+.legacy-button-container .legacy-button-bar {
+  text-align: center;
+  width: 100%;
+}
+.legacy-button-container .legacy-button-bar .legacy-show-text-btn {
+  background-color: #399BFF;
+  border-color: #0068d2;
+  color: #FFF;
+}
+.legacy-button-container .legacy-button-bar .legacy-show-text-btn:hover {
+  background-color: #0068d2;
+  border-color: #00356c;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .legacy-button-container .legacy-button-bar .legacy-show-text-btn {
+    background-color: #0BC143;
+    border-color: #089132;
+  }
+  .legacy-button-container .legacy-button-bar .legacy-show-text-btn:hover {
+    background-color: #089132;
+    border-color: #033011;
+  }
+}
